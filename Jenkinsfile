@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'macos' }
+  agent { label 'docker-compose' }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
